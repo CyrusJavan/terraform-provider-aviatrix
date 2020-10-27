@@ -1253,7 +1253,7 @@ func (c *Client) DisableActiveStandby(transitGateway *TransitVpc) error {
 }
 
 func (c *Client) SwitchActiveTransitGateway(gwName, connName string) error {
-	action := "active_standby_connection_switchover"
+	action := "active_standby_switchover"
 	form := map[string]string{
 		"CID":             c.CID,
 		"action":          action,
